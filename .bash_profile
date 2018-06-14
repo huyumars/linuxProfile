@@ -141,5 +141,4 @@ alias gitpull="git pull origin master"
 alias gitcommit="git commit -am "
 
 
-#openconnect
-alias vpn="sudo openconnect -u 320501 j6.vpntm.com"
+alias premake='/usr/local/Cellar/premake/4.4-beta5/bin/premake4'
