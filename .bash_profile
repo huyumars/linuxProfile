@@ -118,6 +118,7 @@ fi
 
 
 # huyu persion setting
+cd ~
 # ls color
 export  CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
@@ -138,7 +139,7 @@ alias grep="grep --color"
 alias gitpush="git push origin master"
 alias gitpull="git pull origin master"
 #commit all changes file
-alias gitcommit="git commit -am "
+alias gc="git commit -am "
 
 
 alias premake='/usr/local/Cellar/premake/4.4-beta5/bin/premake4'
