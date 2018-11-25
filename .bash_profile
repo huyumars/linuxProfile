@@ -139,7 +139,16 @@ alias grep="grep --color"
 alias gitpush="git push origin master"
 alias gitpull="git pull origin master"
 #commit all changes file
-alias gc="git commit -am "
+alias gc="git commit -a -m "
+alias gl="git log"
+alias gs="git status"
+
+unset tcl
+tcl(){
+  rm -rf ../install
+  rm -rf ../build
+}
+
 
 
 alias premake='/usr/local/Cellar/premake/4.4-beta5/bin/premake4'
