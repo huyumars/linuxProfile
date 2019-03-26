@@ -10,6 +10,7 @@ back_and_create_link  .vim
 back_and_create_link  .vimrc
 back_and_create_link  .bash_profile
 back_and_create_link  .tmux.conf
+back_and_create_link  ssr
 
 #update submodules
 git submodule update --init --recursive
@@ -21,3 +22,9 @@ sudo apt-get install make
 sudo apt install python-dev
 sudo apt install clang
 ./.vim/bundle/YouCompleteMe/install.sh --clang-completer
+
+#docker 
+sudo apt-get install docker.io
+
+#ssr
+sudo docker pull breakwa11/shadowsocksr

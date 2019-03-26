@@ -133,6 +133,8 @@ alias g++14="g++ -std=c++14 "
 export EDITOR=/usr/bin/vim
 alias grep="grep --color"
 
+#tmux
+alias tmux="tmux -u -2"
 
 
 #git related
@@ -142,6 +144,7 @@ alias gitpull="git pull origin master"
 alias gc="git commit -a -m "
 alias gl="git log"
 alias gs="git status"
+alias gd="git diff HEAD^ "
 
 unset tcl
 tcl(){

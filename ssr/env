@@ -1,0 +1,5 @@
+SERVER_PORT=61234
+PASSWORD=mars
+METHOD=aes-256-cfb
+PROTOCOL=auth_chain_b
+OBFS=tls1.2_ticket_auth
