@@ -145,6 +145,21 @@ alias gc="git commit -a -m "
 alias gl="git log"
 alias gs="git status"
 alias gd="git diff HEAD^ "
+alias gb="git branch"
+alias gco="git checkout "
+alias grb="git rebase"
+alias gitpullo="git pull origin"
+alias gitpullu="git pull upstream"
+alias gitpusho="git push origin"
+alias gitpushu="git push upstream"
+
+unset gitsyncmaster
+gitsyncmaster(){
+  git checkout master
+  git pull upstream master
+}
+
+
 
 unset tcl
 tcl(){
@@ -152,6 +167,16 @@ tcl(){
   rm -rf ../build
 }
 
+unset setProxy
+function setProxy() {
+  export ALL_PROXY=socks5://127.0.0.1:1086
+}
+
+
+unset unsetProxy 
+function unsetProxy() {
+  unset ALL_PROXY
+}
 
 
 alias premake='/usr/local/Cellar/premake/4.4-beta5/bin/premake4'
