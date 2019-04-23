@@ -153,6 +153,14 @@ alias gitpullu="git pull upstream"
 alias gitpusho="git push origin"
 alias gitpushu="git push upstream"
 
+
+#docker related
+alias drun="docker run -itd "
+unset dsh
+dsh(){
+ docker exec -it $1 /bin/bash
+}
+
 unset gitsyncmaster
 gitsyncmaster(){
   git checkout master
