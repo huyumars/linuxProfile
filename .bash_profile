@@ -188,3 +188,5 @@ function unsetProxy() {
 
 
 alias premake='/usr/local/Cellar/premake/4.4-beta5/bin/premake4'
+
+. ./login/.loginalias
