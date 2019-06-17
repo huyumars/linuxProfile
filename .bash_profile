@@ -159,6 +159,11 @@ alias gitpullu="git pull upstream"
 alias gitpusho="git push origin"
 alias gitpushu="git push upstream"
 
+#grep related
+alias grepcpp="grep -rin --include \*.h --include \*.cpp"
+alias grepgo="grep -rin --include \*.go"
+alias grepjava="grep -rin --include \*.java"
+alias greppy="grep -rin --include \*.py"
 
 #docker related
 alias drun="docker run -itd "
