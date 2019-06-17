@@ -84,14 +84,21 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+#MAC or Linux
+if [ "$(uname)" == "Darwin" ]; then
+    # Do something under Mac OS X platform
+   export MYPOWERLINEROOT="/usr/local/lib/python3.7/site-packages/powerline/"
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+   export MYPOWERLINEROOT="/usr/share/powerline/"
+fi
+
 #powerline
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
-. /usr/share/powerline/bindings/bash/powerline.sh
-. /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
+. $MYPOWERLINEROOT/bindings/bash/powerline.sh
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
@@ -200,4 +207,4 @@ function unsetProxy() {
 
 alias premake='/usr/local/Cellar/premake/4.4-beta5/bin/premake4'
 
-. ./login/.loginalias
+. ~/login/.loginalias
