@@ -1,6 +1,6 @@
 #!/usr/bin/expect
 set timeout 30
-spawn ssh [lindex $argv 0]
+spawn ssh -t [lindex $argv 0] " ssh  slc-rnpci-bas01-2047159.stratus.slc.ebay.com"
 expect {
         "Password:"
         {send "[lindex $argv 1]\n"}
