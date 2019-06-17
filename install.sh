@@ -21,8 +21,8 @@ sudo apt install cmake
 sudo apt-get install make
 sudo apt install python-dev
 sudo apt install clang
-sudo apt install powerline
-sudo apt install powerline-gitstatus
+pip3 install powerline-status
+pip3 install powerline-gitstatus
 ./.vim/bundle/YouCompleteMe/install.sh --clang-completer
 
 #docker 
