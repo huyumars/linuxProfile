@@ -90,6 +90,7 @@ export LANG=en_US.UTF-8
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
+. /usr/share/powerline/bindings/bash/powerline.sh
 . /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
 
 # colored GCC warnings and errors
