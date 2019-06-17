@@ -84,6 +84,14 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+#powerline
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
+
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
@@ -117,8 +125,6 @@ if ! shopt -oq posix; then
 fi
 
 
-# huyu persion setting
-cd ~
 # ls color
 export  CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
@@ -126,7 +132,6 @@ LANG="en_US.UTF-8"
 LANGUAGE="en_US:en"
 
 
-PS1=$
 alias lal="ls -al"
 alias psg="ps aux| grep "
 alias g++14="g++ -std=c++14 "
