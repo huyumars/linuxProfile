@@ -199,12 +199,13 @@ function setProxy() {
 }
 
 
-unset unsetProxy 
+unset unsetProxy
 function unsetProxy() {
   unset ALL_PROXY
 }
 
-
+alias setC3Proxy="export ALL_PROXY=ebay1-2891352.slc07.dev.ebayc3.com:6666"
+alias unsetC3Proxyr="unset ALL_PROXY"
 alias premake='/usr/local/Cellar/premake/4.4-beta5/bin/premake4'
 
 . ~/login/.loginalias
