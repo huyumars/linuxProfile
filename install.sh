@@ -1,32 +1,12 @@
-#create link
+# oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-back_and_create_link(){
-  mv ~/$1 ~/$1.bk
-  ln -s $PWD/$1  ~/$1
-  echo "create links for" $1
-}
-
-back_and_create_link  .vim
-back_and_create_link  .vimrc
-back_and_create_link  .bash_profile
-back_and_create_link  .tmux.conf
-back_and_create_link  ssr
-
-#update submodules
-git submodule update --init --recursive
-#ycm
-echo "install ycm"
-sudo apt install python
-sudo apt install cmake
-sudo apt-get install make
-sudo apt install python-dev
-sudo apt install clang
-sudo apt install powerline-status
-pip3 install powerline-gitstatus
-./.vim/bundle/YouCompleteMe/install.sh --clang-completer
-
-#docker 
+#docker
 sudo apt-get install docker.io
 
 #ssr
 sudo docker pull breakwa11/shadowsocksr
+
+echo "install vim related"
+./vim.sh
+
