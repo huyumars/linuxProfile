@@ -73,6 +73,7 @@ plugins=(
   mvn
   docker
   autojump
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
