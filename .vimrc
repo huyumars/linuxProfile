@@ -77,7 +77,7 @@ endif
 set number
 
 " Set relative number
-set relativenumber
+" set relativenumber
 
 " Scrolloff
 set scrolloff=6

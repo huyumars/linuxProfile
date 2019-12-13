@@ -1,4 +1,3 @@
-#grep
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -23,10 +22,6 @@ alias psg="ps aux| grep "
 alias g++14="g++ -std=c++14 "
 export EDITOR=/usr/bin/vim
 alias grep="grep --color"
-
-#tmux
-alias tmux="tmux -u -2"
-
 
 #git related
 alias gitpush="git push origin master"

@@ -13,3 +13,5 @@ back_and_create_link  .config
 back_and_create_link  ssr
 back_and_create_link  .zshrc
 back_and_create_link  .aliases.sh
+back_and_create_link  .zsh_custom
+
