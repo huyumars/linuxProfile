@@ -2,7 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/yhu2/.oh-my-zsh"
+#MAC or Linux
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -104,6 +105,9 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # load my aliases
+
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
 if [ -f ~/.aliases.sh ]; then
     . ~/.aliases.sh
 fi
